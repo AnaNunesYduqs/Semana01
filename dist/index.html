@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro Books</title>
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+</head>
+<body>
+     <main class="container-padding flex">
+
+        <div class="coluna-central">
+            <section class="block-nova-transacao">
+                <h2>Novo Cadastro</h2>
+                <form action="" method="post" novalidate>
+                    <div class="campo">
+                        <label for="nome">Nome:</label><br>
+                        <input type="string" name="nome" id="nome" class="campo-input" required />
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail:</label><br>
+                        <input type="string" name="email" id="email" class="campo-input" required />
+                    </div>
+                   <div class="campo">
+                       <label for="bio">Biografia:</label><br>
+                       <input type="string" name="bio" id="bio" class="campo-input" min="100" max="500"  required />
+                   </div>
+                    <div class="campo">
+                        <button type="submit" class="btn">
+                            Concluir Cadastro
+                        </button>
+                    </div>
+
+                </form>
+            </section>
+
+        </div>
+
+        <aside class="extrato">
+            <h3>Lista de Autores</h3>
+            <div class="registro-transacoes">
+                <div class="transacoes-group">
+                    <strong class="mes-group">Setembro</strong>
+                    <div class="transacao-item">
+                        <div class="transacao-info">
+                            <span class="tipo">Transferência</span>
+                            <strong class="valor">-R$ 36,00</strong>
+                        </div>
+                        <time class="data">04/09</time>
+                    </div>
+                    <div class="transacao-item">
+                        <div class="transacao-info">
+                            <span class="tipo">Transferência</span>
+                            <strong class="valor">-R$ 58,00</strong>
+                        </div>
+                        <time class="data">02/09</time>
+                    </div>
+                </div>
+
+                <div class="transacoes-group">
+                    <strong class="mes-group">Agosto</strong>
+                    <div class="transacao-item">
+                        <div class="transacao-info">
+                            <span class="tipo">Transferência</span>
+                            <strong class="valor">-R$ 50,00</strong>
+                        </div>
+                        <time class="data">30/08</time>
+                    </div>
+                    <div class="transacao-item">
+                        <div class="transacao-info">
+                            <span class="tipo">Depósito</span>
+                            <strong class="valor">R$ 86,00</strong>
+                        </div>
+                        <time class="data">27/08</time>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
